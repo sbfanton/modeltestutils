@@ -9,6 +9,7 @@
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Models and entities test utilities</description>
+  <url>https://github.com/sbfanton/modeltestutils</url>
   
   <licenses>
         <license>
