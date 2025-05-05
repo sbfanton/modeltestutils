@@ -35,7 +35,6 @@ public class ModelTestUtils {
      *
      * @param <T> The type of the values.
      * @param clazz Object class.
-     * @throws NullPointerException if {@code clazz} is {@code null}.
      */
 	public static <T> void testNoArgsConstructor(Class<T> clazz) throws Exception {
 		if (clazz == null) {
@@ -52,7 +51,6 @@ public class ModelTestUtils {
      * @param <T> The type of the values.
      * @param clazz Object class.
      * @param testData Map with attributes of the class. Key: attribute name, Value: attribute value.
-     * @throws NullPointerException if {@code clazz} is {@code null} or {@code testData} is {@code null}.
      */
     public static <T> void testAllArgsConstructor(Class<T> clazz, Map<String, Object> testData) throws Exception {
     	if (clazz == null || testData == null) {
@@ -71,8 +69,6 @@ public class ModelTestUtils {
      *
      * @param <T> The type of the values.
      * @param clazz Object class.
-     * @throws Exception.
-     * @throws NullPointerException if {@code clazz} is {@code null}.
      */
     public static <T> void testAllConstructors(Class<T> clazz) throws Exception {
     	if (clazz == null) {
@@ -90,7 +86,6 @@ public class ModelTestUtils {
      * 
      * @param <T> The type of the values.
      * @param clazz Object class.
-     * @throws NullPointerException if {@code clazz} is {@code null}.
      */
     @SuppressWarnings("unchecked")
 	public static <T> void testGettersAndSetters(Class<T> clazz) throws Exception {
@@ -155,7 +150,6 @@ public class ModelTestUtils {
      * @param <T> The type of the values.
      * @param clazz Object class.
      * @param testData Map with attributes of the class. Key: attribute name, Value: attribute value.
-     * @throws NullPointerException if {@code clazz} is {@code null} or {@code testData} is {@code null}.
      */
     @SuppressWarnings("rawtypes")
  	public static <T> void testEqualsAndHashCode(Class<T> clazz, Map<String, Object> testData) throws Exception {
@@ -242,8 +236,6 @@ public class ModelTestUtils {
      *
      * @param <T> The type of the values.
      * @param clazz Object class.
-     * @throws Exception 
-     * @throws NullPointerException if {@code clazz} is {@code null}.
      */
  	@SuppressWarnings("unchecked")
 	public static <T> void testClone(Class<T> clazz) throws Exception {
